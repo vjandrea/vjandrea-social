@@ -1,0 +1,28 @@
+/** style.css **/
+
+#vjandrea_social {
+	width: 100%;
+	text-align: center;
+}
+
+#vjandrea_social ul {
+	position: relative;
+}
+#vjandrea_social li {
+	display: inline !important;
+	list-style-type: none !important;
+	padding: 1px;
+	line-height: 32px;a
+}
+
+#vjandrea_social li img {
+	filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+#vjandrea_social img:hover {
+	filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
