@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: VJAndrea Social
+Plugin Name: WP Widget Social
 Plugin URI: http://www.vjandrea.net
-Description: VJAndrea custom social icons widget
+Description: Simple social icons sidebar widget. Very easy to configure: add the profile username for each social network and that's it!
 Version: 1.0
 Author: Andrea Bergamasco
 Author URI: http://twitter.com/vjandrea
@@ -10,10 +10,10 @@ License: GPL2
 */
 
 
-class vjandrea_social extends WP_Widget {
+class vjandrea_wp_widget_social extends WP_Widget {
 
 	// constructor
-	function vjandrea_social() {
+	function vjandrea_wp_widget_social() {
 		/* ... */
 		parent::WP_Widget(false, $name = __('VJAndrea Social', 'wp_widget_plugin') );
 
@@ -102,7 +102,7 @@ class vjandrea_social extends WP_Widget {
 
 		echo $before_widget;
 		// Display the widget
-		echo '<div id="vjandrea_social">';
+		echo '<div id="vjandrea_wp_widget_social">';
 		echo '<ul>';
 
 		// // Check if title is set
@@ -143,8 +143,8 @@ class vjandrea_social extends WP_Widget {
 }
 
 // register widget
-wp_enqueue_style('vjandrea_social',plugin_dir_url(__FILE__).'style.css');
+wp_enqueue_style('vjandrea_wp_widget_social',plugin_dir_url(__FILE__).'style.css');
 
-add_action('widgets_init', create_function('', 'return register_widget("vjandrea_social");'));
+add_action('widgets_init', create_function('', 'return register_widget("vjandrea_wp_widget_social");'));
 
 

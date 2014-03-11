@@ -1,4 +1,4 @@
-vjandrea-social
+wp-widget-social
 ===============
 
 Wordpress plugin that generates a widget with round social icons for:
@@ -8,4 +8,7 @@ Wordpress plugin that generates a widget with round social icons for:
 * Pinterest
 * Twitter
 
-Icons with links appear only if the handle is present.
+An icon appears only if its account has been configured.
+
+TODO: add more social networks
+TODO: allow changes in the order of icons
